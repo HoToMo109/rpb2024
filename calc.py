@@ -6,11 +6,19 @@ def add(x,y):
 
 def division(x,y):
     if y != 0:
-        print(__name__)
         return x/y
     else:
         print("Error, cannot divide by zero")
-        print(__name__)
         return
     
-print(division(2,3))
+def main():
+    print("lets calculate! input 1 to add, 2 to divide")
+    x =  int(input())
+    if x ==1:
+        a = int(input())
+        b = int(input())
+        add(a,b)
+    elif x==2:
+        a = int(input())
+        b = int(input())
+        division(a,b)
